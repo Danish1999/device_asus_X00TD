@@ -83,3 +83,6 @@ on post-fs-data
     # Create directory for cdfinger fingerprint
     mkdir /data/system/cdfinger 0700 system system
     restorecon /data/system/cdfinger
+
+    chown system system /mnt/vendor/persist/flag/countrycode.txt
+    chmod 0644 /mnt/vendor/persist/flag/countrycode.txt
